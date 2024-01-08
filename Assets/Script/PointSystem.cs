@@ -7,8 +7,7 @@ public class PointSystem : MonoBehaviour
     [SerializeField] private int TotalPoints;
 
 
-
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Good"))
         {
