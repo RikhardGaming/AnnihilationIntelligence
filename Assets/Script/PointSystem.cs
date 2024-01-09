@@ -13,17 +13,10 @@ public class PointSystem : MonoBehaviour
         {
             TotalPoints++;
         }
-        if(other.tag == "Bad")
+        if(other.CompareTag("Bad"))
         {
             TotalPoints--;
         }
         
-        
-        /*
-        if(other.tag == "Neutral")
-        {
-            Debug.Log("Neutral");
-
-        }*/
     }
 }
