@@ -596,4 +596,22 @@ public class AITalk : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Good"))
+        {
+            step++;
+        }
+        if (other.CompareTag("Bad"))
+        {
+            step--;
+        }
+
+    }
+
+
+
+
 }
