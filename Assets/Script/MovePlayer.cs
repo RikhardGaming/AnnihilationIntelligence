@@ -7,7 +7,6 @@ public class MovePlayer : MonoBehaviour
     private float minimum = 0f;
     private float maximum = 1f;
 
-    static float t = 0f;
 
 
 
@@ -32,7 +31,7 @@ public class MovePlayer : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-
+            Player.transform.position = RightTarget.position;
         }
 
 
