@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    private int MoveCounter = 0;
+    [SerializeField] private int MoveCounter = 0;
+    [SerializeField] private bool CanMove;
     [SerializeField] private float speed;
     [SerializeField] private Transform Player;
 
@@ -31,133 +32,203 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private Transform LeftTarget8;
     [SerializeField] private Transform LeftTarget9;
 
+    
+
+
+
+    private void Awake()
+    {
+        CanMove = true;
+    }
+
+
+
     private void Update()
     {
 
-
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 0)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 0)
         {
             Player.transform.position = RightTarget.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 1;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 1)
+        print(MoveCounter);
+
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 1)
         {
-
             Player.transform.position = RightTarget2.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 2;
+            
+
+            StartCoroutine(SuckMyDickCounter());
         }
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 2)
+
+
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 2)
         {
             Player.transform.position = RightTarget3.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 3;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 3)
+        SuckMyDickCounter();
+
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 3)
         {
 
             Player.transform.position = RightTarget4.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 4;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 4)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 4)
         {
             Player.transform.position = RightTarget5.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 5;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 5)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 5)
         {
 
             Player.transform.position = RightTarget6.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 6;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 6)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 6)
         {
             Player.transform.position = RightTarget7.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 7;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 7)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 7)
         {
 
             Player.transform.position = RightTarget8.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 8;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && MoveCounter >= 8)
+        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 8)
         {
 
             Player.transform.position = RightTarget9.position;
-            MoveCounter++;
+            CanMove = false;
+            MoveCounter = 9;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 0)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 0)
         {
 
             Player.transform.position = LeftTarget.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 1)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 1)
         {
 
             Player.transform.position = LeftTarget2.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 2)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 2)
         {
 
             Player.transform.position = LeftTarget3.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 3)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 3)
         {
 
             Player.transform.position = LeftTarget4.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 4)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 4)
         {
 
             Player.transform.position = LeftTarget5.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 5)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 5)
         {
 
             Player.transform.position = LeftTarget6.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 6)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 6)
         {
 
             Player.transform.position = LeftTarget7.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 7)
+        if (CanMove == true && CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 7)
         {
 
             Player.transform.position = LeftTarget8.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && MoveCounter >= 8)
+        if (CanMove == true && Input.GetKey(KeyCode.LeftArrow) && MoveCounter == 8)
         {
 
             Player.transform.position = LeftTarget9.position;
+            CanMove = false;
             MoveCounter++;
+
+            StartCoroutine(SuckMyDickCounter());
         }
 
 
@@ -165,6 +236,13 @@ public class MovePlayer : MonoBehaviour
 
 
     }
+
+    IEnumerator SuckMyDickCounter()
+    {
+        yield return new WaitForSeconds(2);
+        CanMove = true;
+    }
+
 
 }
 
