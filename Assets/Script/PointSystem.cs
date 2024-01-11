@@ -5,22 +5,28 @@ using UnityEngine;
 public class PointSystem : MonoBehaviour
 {
     [SerializeField] public int TotalPoints;
+    [SerializeField] public int playerStep;
 
     //variabel av script med navn aiTalk
     private AITalk aiTalk;
 
+    private MovePlayer player;
+    
 
     private void Start()
     {
         // find GameObject with tag (case sensitive), then what component to get.
         aiTalk = GameObject.FindGameObjectWithTag("dialogbox").GetComponent<AITalk>();
 
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<MovePlayer>();
+        
     }
     private void Update()
     {
         // make aiTalk sin step variabel = TotalPoints.
-        aiTalk.step = TotalPoints;
+        aiTalk.karma = TotalPoints;
+
+       
     }
 
 

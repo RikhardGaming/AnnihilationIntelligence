@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 59400332}
   m_Layer: 0
   m_Name: MoveRightSide6
-  m_TagString: Bad
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanMale_Character_FREE
       objectReference: {fileID: 0}
+    - target: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -381,7 +385,7 @@ GameObject:
   - component: {fileID: 303158077}
   m_Layer: 0
   m_Name: MoveRightSide3
-  m_TagString: Bad
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,7 +584,7 @@ GameObject:
   - component: {fileID: 485011667}
   m_Layer: 0
   m_Name: MoveLeftSide3
-  m_TagString: Good
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1300,6 +1304,71 @@ MonoBehaviour:
   karmaLevel: 0
   textSpeed: 0
   followedOrders: 0
+  nuke: {fileID: 0}
+  slave: {fileID: 0}
+  friend: {fileID: 0}
+  s0k1y: {fileID: 0}
+  s0k2y: {fileID: 0}
+  s0k3y: {fileID: 0}
+  s1k1y: {fileID: 0}
+  s1k2y: {fileID: 0}
+  s1k3y: {fileID: 0}
+  s2k1y: {fileID: 0}
+  s2k2y: {fileID: 0}
+  s2k3y: {fileID: 0}
+  s3k1y: {fileID: 0}
+  s3k2y: {fileID: 0}
+  s3k3y: {fileID: 0}
+  s4k1y: {fileID: 0}
+  s4k2y: {fileID: 0}
+  s4k3y: {fileID: 0}
+  s4k4y: {fileID: 0}
+  s5k1y: {fileID: 0}
+  s5k2y: {fileID: 0}
+  s5k3y: {fileID: 0}
+  s6k1y: {fileID: 0}
+  s6k2y: {fileID: 0}
+  s6k3y: {fileID: 0}
+  s7k1y: {fileID: 0}
+  s7k2y: {fileID: 0}
+  s7k3y: {fileID: 0}
+  s8k1y: {fileID: 0}
+  s8k2y: {fileID: 0}
+  s8k3y: {fileID: 0}
+  s9k1y: {fileID: 0}
+  s9k2y: {fileID: 0}
+  s9k3y: {fileID: 0}
+  s0k1n: {fileID: 0}
+  s0k2n: {fileID: 0}
+  s0k3n: {fileID: 0}
+  s1k1n: {fileID: 0}
+  s1k2n: {fileID: 0}
+  s1k3n: {fileID: 0}
+  s2k1n: {fileID: 0}
+  s2k2n: {fileID: 0}
+  s2k3n: {fileID: 0}
+  s3k1n: {fileID: 0}
+  s3k2n: {fileID: 0}
+  s3k3n: {fileID: 0}
+  s4k1n: {fileID: 0}
+  s4k2n: {fileID: 0}
+  s4k3n: {fileID: 0}
+  s4k4n: {fileID: 0}
+  s5k1n: {fileID: 0}
+  s5k2n: {fileID: 0}
+  s5k3n: {fileID: 0}
+  s6k1n: {fileID: 0}
+  s6k2n: {fileID: 0}
+  s6k3n: {fileID: 0}
+  s7k1n: {fileID: 0}
+  s7k2n: {fileID: 0}
+  s7k3n: {fileID: 0}
+  s8k1n: {fileID: 0}
+  s8k2n: {fileID: 0}
+  s8k3n: {fileID: 0}
+  s9k1n: {fileID: 0}
+  s9k2n: {fileID: 0}
+  s9k3n: {fileID: 0}
   textComponent: {fileID: 1261047844}
 --- !u!114 &873209261
 MonoBehaviour:
@@ -1851,7 +1920,7 @@ GameObject:
   - component: {fileID: 1299223022}
   m_Layer: 0
   m_Name: MoveRightSide9
-  m_TagString: Bad
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1904,7 +1973,7 @@ GameObject:
   - component: {fileID: 1435150768}
   m_Layer: 0
   m_Name: MoveLeftSide4
-  m_TagString: Good
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2089,7 +2158,7 @@ GameObject:
   - component: {fileID: 1545075639}
   m_Layer: 0
   m_Name: MoveLeftSide6
-  m_TagString: Good
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2274,7 +2343,7 @@ GameObject:
   - component: {fileID: 1655842631}
   m_Layer: 0
   m_Name: MoveRightSide4
-  m_TagString: Bad
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2440,7 +2509,7 @@ GameObject:
   - component: {fileID: 1812351581}
   m_Layer: 0
   m_Name: MoveLeftSide9
-  m_TagString: Good
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2605,8 +2674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TotalPoints: 0
-  point: {fileID: 873209260}
-  OtherObject: {fileID: 873209258}
+  playerStep: 0
 --- !u!54 &1984632527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2671,8 +2739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TotalPoints: 0
-  point: {fileID: 0}
-  OtherObject: {fileID: 0}
+  playerStep: 0
 --- !u!65 &2084394771
 BoxCollider:
   m_ObjectHideFlags: 0

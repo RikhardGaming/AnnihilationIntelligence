@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    [SerializeField] public int MoveCounter = 0;
+    [SerializeField] public int MoveCounter;
     [SerializeField] private bool CanMove;
     [SerializeField] private float speed;
     [SerializeField] private Transform Player;
@@ -32,8 +32,9 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private Transform LeftTarget8;
     [SerializeField] private Transform LeftTarget9;
 
-    
 
+
+    private AITalk aiTalk;
 
 
     private void Awake()
@@ -41,16 +42,22 @@ public class MovePlayer : MonoBehaviour
         CanMove = true;
     }
 
-
+    private void Start()
+    {
+        aiTalk = GameObject.FindGameObjectWithTag("dialogbox").GetComponent<AITalk>();
+        MoveCounter = 0;
+    }
 
     private void Update()
     {
 
-        if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 0)
+            
+            if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 0)
         {
             Player.transform.position = RightTarget.position;
             CanMove = false;
             MoveCounter = 1;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -61,7 +68,8 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget2.position;
             CanMove = false;
             MoveCounter = 2;
-            
+            aiTalk.step++;
+
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -72,6 +80,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget3.position;
             CanMove = false;
             MoveCounter = 3;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -83,6 +92,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget4.position;
             CanMove = false;
             MoveCounter = 4;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -92,6 +102,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget5.position;
             CanMove = false;
             MoveCounter = 5;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -102,6 +113,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget6.position;
             CanMove = false;
             MoveCounter = 6;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -111,6 +123,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget7.position;
             CanMove = false;
             MoveCounter = 7;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -121,6 +134,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget8.position;
             CanMove = false;
             MoveCounter = 8;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -131,6 +145,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = RightTarget9.position;
             CanMove = false;
             MoveCounter = 9;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -145,6 +160,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -155,6 +171,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget2.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -165,6 +182,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget3.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -175,6 +193,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget4.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -185,6 +204,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget5.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -195,6 +215,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget6.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -205,6 +226,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget7.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -215,6 +237,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget8.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
@@ -225,6 +248,7 @@ public class MovePlayer : MonoBehaviour
             Player.transform.position = LeftTarget9.position;
             CanMove = false;
             MoveCounter++;
+            aiTalk.step++;
 
             StartCoroutine(SuckMyDickCounter());
         }
