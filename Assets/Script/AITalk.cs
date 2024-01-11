@@ -604,8 +604,4 @@ public class AITalk : MonoBehaviour
 
 
 
-
-
-
-
 }
