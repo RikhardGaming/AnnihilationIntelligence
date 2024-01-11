@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    [SerializeField] private int MoveCounter = 0;
+    [SerializeField] public int MoveCounter = 0;
     [SerializeField] private bool CanMove;
     [SerializeField] private float speed;
     [SerializeField] private Transform Player;
@@ -55,7 +55,6 @@ public class MovePlayer : MonoBehaviour
             StartCoroutine(SuckMyDickCounter());
         }
 
-        print(MoveCounter);
 
         if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 1)
         {
@@ -77,7 +76,6 @@ public class MovePlayer : MonoBehaviour
             StartCoroutine(SuckMyDickCounter());
         }
 
-        SuckMyDickCounter();
 
         if (CanMove == true && Input.GetKey(KeyCode.RightArrow) && MoveCounter == 3)
         {

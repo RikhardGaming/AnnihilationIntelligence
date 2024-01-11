@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class PointSystem : MonoBehaviour
 {
-    [SerializeField] private int TotalPoints;
+    [SerializeField] public int TotalPoints;
 
+    public AITalk point;
+    public GameObject OtherObject;
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if(other.CompareTag("Good"))
+
+
+        point = OtherObject.GetComponent<AITalk>();
+    }
+
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Good"))
         {
-            TotalPoints++;
+            
         }
         if(other.CompareTag("Bad"))
         {
-            TotalPoints--;
+
         }
         
     }

@@ -14,6 +14,8 @@ public class AITalk : MonoBehaviour
     List<string> lineList;
     int index;
 
+
+
     public TextMeshProUGUI textComponent;
 
 
@@ -23,10 +25,13 @@ public class AITalk : MonoBehaviour
         step = 0;
         karma = 0;
         lineList = new List<string>();
+
+
+
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+       /* if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             karma--;
         }
@@ -41,7 +46,7 @@ public class AITalk : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             step--;
-        }
+        }*/
         if (Input.GetMouseButtonDown(0))
         {
             startDialogue();
@@ -598,18 +603,7 @@ public class AITalk : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Good"))
-        {
-            step++;
-        }
-        if (other.CompareTag("Bad"))
-        {
-            step--;
-        }
 
-    }
 
 
 
