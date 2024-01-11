@@ -102,8 +102,7 @@ public class AITalk : MonoBehaviour
     }
     private void Update()
     {
-
-        FollowOrderBool.followOrder = followedOrders;
+        followedOrders = FollowOrderBool.followOrder;
 
        /* if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
