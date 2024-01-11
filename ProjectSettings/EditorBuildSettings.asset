@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/slave ending.unity
+    guid: 287858454c209f542b9557bb9c33a6b4
+  - enabled: 1
+    path: Assets/Scenes/nuke ending.unity
+    guid: 4170f1bedf688d3449533dfbda3b364f
+  - enabled: 1
+    path: Assets/Scenes/good ending.unity
+    guid: 878c61fa56508fb4ab52d53e9b49e8b3
   m_configObjects: {}
